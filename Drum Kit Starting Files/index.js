@@ -18,12 +18,6 @@ function gotClicked() {
 }
 
 
-
-
-
-
-
-
 //function which listnes to keyboard 
 
 function makeSound(key) {
@@ -163,3 +157,14 @@ document.addEventListener("keydown", function(event){
 });
 
 
+//keypress with Jquery for h1 -- DRUM KIT
+
+//function to change h1
+// function changeH1(e) {
+        
+// }
+
+$("body").keypress(function (e) { 
+   
+    $("h1").html(e.key);
+});
